@@ -48,7 +48,7 @@ Fixed Charge: Rs. 50
 Surcharge: Rs. 37.5
 Final Bill: Rs.800
 
-```mermaid
+```mermaid 
 flowchart TD
 A([Start]) --> B[/Enter Units/]
 B --> C{Units < 0?}
@@ -64,4 +64,4 @@ I --> J
 J --> K[/Calculate and Display Final Bill/]
 K --> L([Stop])
 D --> L
-    ```
+```

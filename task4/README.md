@@ -60,4 +60,12 @@ flowchart TD
     K --> L[/Display salary statement/]
     D --> M([End])
     L --> M
-``
+```
+
+Sample output
+enter basic salary : 25000
+enter allowance: 5000
+enter  overtime : 2000
+gross salary : rs.32000
+deducation : rs.3200
+net salary : rs. 28800 

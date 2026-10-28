@@ -74,4 +74,11 @@ Total cost: 299.0
     M --> O
     N --> O  
 ```
-
+sample output
+enter montly usage: 10GB
+enter budget : rs.500
+plan A cost: rs.399
+plan B cost : rs.499
+plan C cost: rs.599
+most economical plan : plan A 
+total cost : rs.399

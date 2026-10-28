@@ -46,26 +46,28 @@ Enter electricity units: 250
 Energy Charge: Rs. 750
 Fixed Charge: Rs. 50
 Surcharge: Rs. 37.5
-Final Bill: Rs. 837.5
+Final Bill: Rs. 800
 
-```Mermaid
+```mermaid
 flowchart TD
-    A([Start]) --> B[/Enter units/]
-    B --> C{Units < 0?}
+    A([Start]) --> B[/Enter electricity units/]
+    B --> C{Units less than 0?}
     C -- Yes --> D[/Print Invalid Units/]
-    C -- No --> E{Units <= 100?}
-    E -- Yes --> F[Charge = Units * 2]
-    E -- No --> G{Units <= 200?}
-    G -- Yes --> H[Charge = 200 + Extra * 3]
-    G -- No --> I[Charge = 500 + Extra * 5]
-    F --> J[Add fixed charge and surcharge]
+    C -- No --> E{Units less than or equal to 100?}
+    E -- Yes --> F[Bill = Units * 2]
+    E -- No --> G{Units less than or equal to 200?}
+    G -- Yes --> H[Bill = 200 + Units minus 100 times 3]
+    G -- No --> I[Bill = 500 + Units minus 200 times 5]
+    F --> J[Fixed Charge = 50]
     H --> J
     I --> J
-    J --> K{Units < 50?}
-    K -- Yes --> L[Apply rebate]
-    K -- No --> M[Calculate final bill]
-    L --> M
-    M --> N[/Display bill/]
-    D --> O([Stop])
-    N --> O
+    J --> K[Calculate 5 percent surcharge]
+    K --> L[Total = Bill + Fixed Charge + Surcharge]
+    L --> M{Units less than 50?}
+    M -- Yes --> N[Subtract rebate of 10]
+    M -- No --> O[Keep total unchanged]
+    N --> P[/Display all charges and final bill/]
+    O --> P
+    D --> Q([Stop])
+    P --> Q
 ```

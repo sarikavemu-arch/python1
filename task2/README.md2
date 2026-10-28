@@ -47,8 +47,9 @@ Energy Charge: Rs. 750
 Fixed Charge: Rs. 50
 Surcharge: Rs. 37.5
 Final Bill: Rs. 837.5
-```mermaid
-   flowchart TD
+
+```Mermaid
+flowchart TD
     A([Start]) --> B[/Enter units/]
     B --> C{Units < 0?}
     C -- Yes --> D[/Print Invalid Units/]
@@ -67,4 +68,4 @@ Final Bill: Rs. 837.5
     M --> N[/Display bill/]
     D --> O([Stop])
     N --> O
-   ```
+```

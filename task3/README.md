@@ -71,3 +71,12 @@ flowchart TD
     D --> P([End])
     O --> P
 ```
+Sample output
+consulation charges :500
+diagnosis charges :1000
+treatment charges:2500
+total bill: rs.4000
+concession:rs.500
+final bill :rs.3500
+patient classification : regular
+

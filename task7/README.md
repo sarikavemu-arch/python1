@@ -97,3 +97,12 @@ flowchart TD
     D --> T([End])
     S --> T
 ```
+sample output
+product: bag
+quality : 2
+price per item : rs.500
+subtotal :rs.1000
+discount:rs.100
+tax: rs.90
+final bill : rs.990
+

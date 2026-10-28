@@ -51,26 +51,10 @@ Final Bill: Rs.800
 ```mermaid
 flowchart TD
     A([Start]) --> B[/Enter units/]
-    B --> C{Units less than 0?}
-    C -- Yes --> D[/Print Invalid Units/]
-    C -- No --> E{Units <= 100?}
-    E -- Yes --> F[Calculate units x 2]
-    E -- No --> G{Units <= 200?}
-    G -- Yes --> H[Calculate 200 + extra units x 3]
-    G -- No --> I[Calculate 500 + extra units x 5]
-    F --> J[Add fixed charge and surcharge]
-    H --> J
-    I --> J
-    J --> K{Energy charge > 500?}
-    K -- Yes --> L[Subtract rebate]
-    K -- No --> M[Keep bill unchanged]
-    L --> N[Calculate total bill]
-    M --> N
-    N --> O[/Enter previous bill/]
-    O --> P{Total > previous x 1.5?}
-    P -- Yes --> Q[/Print unusual increase/]
-    P -- No --> R[/Print normal change/]
-    D --> S([End])
-    Q --> S
-    R --> S
+    B --> C{Units <=100?}
+    C--yes-->D[Calculate Bill]
+    C--No-->E[Calculate Slab Bill]
+    D-->F[Display Bill]
+    E-->F
+    F-->G[Stop]
 ```

@@ -84,6 +84,14 @@ flowchart TD
     F --> Q([End])
     P --> Q
 ```            
+sample output
+venue cost: rs.10000
+catering cost : rs.150000
+equipment cost :rs.50000
+total cost:rs.30000
+remaining amount :rs.20000
+contribution :rs.200
+break-even :rs.100
 
     
             

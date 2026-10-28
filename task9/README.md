@@ -88,3 +88,13 @@ flowchart TD
     D --> P([End])
     O --> P
 ```
+sample output
+ travel budget : rs.500000
+ hotel expenses: rs.15000
+ food expenses: rs.8000
+ transport expenses:rs. 20000
+
+ total expenses :rs.30000
+ remaining : rs.20000
+ largest expenses : hotel
+ 

@@ -66,12 +66,8 @@ Profit target achieved
     L --> M       
 ```
 sample output
-material cost :rs.50000
-labour cost :rs.20000
-machine cost : rs.1000
-selling price :rs.12000
+material cost: rs.5000
+ladour : rs.2000
+total cost: rs.80000
 
-total cost : rs.8000
-profit: rs.4000
-profitability :target achieved
 

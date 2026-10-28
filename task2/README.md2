@@ -1,4 +1,4 @@
-
+ 
 units = int(input("Enter electricity units: "))
 
 if units < 0:
@@ -48,7 +48,7 @@ Fixed Charge: Rs. 50
 Surcharge: Rs. 37.5
 Final Bill: Rs. 800
 
-```mermaid
+``` mermaid
 flowchart TD
     A([Start]) --> B[/Enter electricity units/]
     B --> C{Units less than 0?}
@@ -70,4 +70,4 @@ flowchart TD
     O --> P
     D --> Q([Stop])
     P --> Q
-```
+             ```

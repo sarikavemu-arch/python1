@@ -44,9 +44,11 @@ Enter consultation charge: 1000
 Enter diagnostic charge: 2000
 Enter treatment charge: 3000
 Total charges: 6000.0
+output
 Concession: 600.0
 Final bill: 5400.0
 Patient category: High payment 
+
 ```mermaid
 flowchart TD
     A([Start]) --> B[/Enter consultation diagnostic and treatment charges/]

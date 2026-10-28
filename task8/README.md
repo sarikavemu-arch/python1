@@ -65,3 +65,13 @@ Profit target achieved
     E --> M([End])
     L --> M       
 ```
+sample output
+material cost :rs.50000
+labour cost :rs.20000
+machine cost : rs.1000
+selling price :rs.12000
+
+total cost : rs.8000
+profit: rs.4000
+profitability :target achieved
+

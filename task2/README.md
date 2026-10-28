@@ -58,3 +58,8 @@ flowchart TD
     E-->F
     F-->G[Stop]
 ```
+sample output:
+Enter units :150
+previous month Bill: Rs.400
+Current month Bill: Rs.300
+Bill Increase : Rs.100

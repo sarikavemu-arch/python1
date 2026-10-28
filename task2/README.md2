@@ -48,25 +48,29 @@ Fixed Charge: Rs. 50
 Surcharge: Rs. 37.5
 Final Bill: Rs.800
 
-```mermaid 
+```mermaid
 flowchart TD
-    A([Start]) --> B[/Enter medical charges and age/]
-    B --> C{Any negative input?}
-    C -- Yes --> D[/Print Invalid Input/]
-    C -- No --> E[Calculate total charges]
-    E --> F{Age >= 60?}
-    F -- Yes --> G[Calculate 10% discount]
-    F -- No --> H[Discount = 0]
-    G --> I[Calculate final bill]
-    H --> I
-    I --> J{Bill <= 1000?}
-    J -- Yes --> K[Low Payment]
-    J -- No --> L{Bill <= 5000?}
-    L -- Yes --> M[Medium Payment]
-    L -- No --> N[High Payment]
-    K --> O[/Display bill and category/]
-    M --> O
-    N --> O
-    D --> P([Stop])
-    O --> P
+    A([Start]) --> B[/Enter units/]
+    B --> C{Units less than 0?}
+    C -- Yes --> D[/Print Invalid Units/]
+    C -- No --> E{Units <= 100?}
+    E -- Yes --> F[Calculate units x 2]
+    E -- No --> G{Units <= 200?}
+    G -- Yes --> H[Calculate 200 + extra units x 3]
+    G -- No --> I[Calculate 500 + extra units x 5]
+    F --> J[Add fixed charge and surcharge]
+    H --> J
+    I --> J
+    J --> K{Energy charge > 500?}
+    K -- Yes --> L[Subtract rebate]
+    K -- No --> M[Keep bill unchanged]
+    L --> N[Calculate total bill]
+    M --> N
+    N --> O[/Enter previous bill/]
+    O --> P{Total > previous x 1.5?}
+    P -- Yes --> Q[/Print unusual increase/]
+    P -- No --> R[/Print normal change/]
+    D --> S([End])
+    Q --> S
+    R --> S
 ```

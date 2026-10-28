@@ -50,18 +50,23 @@ Final Bill: Rs.800
 
 ```mermaid 
 flowchart TD
-A([Start]) --> B[/Enter Units/]
-B --> C{Units < 0?}
-C -- Yes --> D[/Invalid Units/]
-C -- No --> E{Units <= 100?}
-E -- Yes --> F[Bill = Units * 2]
-E -- No --> G{Units <= 200?}
-G -- Yes --> H[Bill = 200 + Extra * 3]
-G -- No --> I[Bill = 500 + Extra * 5]
-F --> J[Add Fixed Charge and Surcharge]
-H --> J
-I --> J
-J --> K[/Calculate and Display Final Bill/]
-K --> L([Stop])
-D --> L
+    A([Start]) --> B[/Enter medical charges and age/]
+    B --> C{Any negative input?}
+    C -- Yes --> D[/Print Invalid Input/]
+    C -- No --> E[Calculate total charges]
+    E --> F{Age >= 60?}
+    F -- Yes --> G[Calculate 10% discount]
+    F -- No --> H[Discount = 0]
+    G --> I[Calculate final bill]
+    H --> I
+    I --> J{Bill <= 1000?}
+    J -- Yes --> K[Low Payment]
+    J -- No --> L{Bill <= 5000?}
+    L -- Yes --> M[Medium Payment]
+    L -- No --> N[High Payment]
+    K --> O[/Display bill and category/]
+    M --> O
+    N --> O
+    D --> P([Stop])
+    O --> P
 ```

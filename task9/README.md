@@ -89,12 +89,14 @@ flowchart TD
     O --> P
 ```
 sample output
- travel budget : rs.500000
- hotel expenses: rs.15000
- food expenses: rs.8000
- transport expenses:rs. 20000
+sample output
+material cost :rs.50000
+labour cost :rs.20000
+machine cost : rs.1000
+selling price :rs.12000
 
- total expenses :rs.30000
- remaining : rs.20000
- largest expenses : hotel
- 
+total cost : rs.8000
+profit: rs.4000
+profitability :target achieved
+
+

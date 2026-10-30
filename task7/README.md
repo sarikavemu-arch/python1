@@ -70,6 +70,28 @@ Subtotal: 2200.0
 Total tax: 194.0
 Discount: 220.0
 Final invoice: 2174.0
+pseudocode
+START
+INPUT number of products
+
+FOR each product
+    INPUT product name
+    INPUT quantity and price
+    INPUT product category
+
+    CALCULATE subtotal
+    APPLY category-specific tax
+    CHECK discount conditions
+
+    APPLY eligible discount
+    CHECK maximum discount limit
+
+    CALCULATE final product amount
+END FOR
+
+CALCULATE total bill
+DISPLAY itemized invoice
+STOP
 ```mermaid
 flowchart TD
     A([Start]) --> B[/Enter product count/]
@@ -97,6 +119,14 @@ flowchart TD
     D --> T([End])
     S --> T
 ```
+Test Case	Input	Expected Output
+1	Single product	Product bill generated
+2	Multiple products	Total bill calculated
+3	Purchase above discount limit	Discount applied
+4	Purchase below discount limit	No threshold discount
+
+Conclusion
+The program generates an itemized retail bill by calculating product costs, quantities, taxes, and discounts. It applies discount limits and displays the final amount.
 sample output
 product: bag
 quality : 2

@@ -47,6 +47,28 @@ Energy Charge: Rs. 750
 Fixed Charge: Rs. 50
 Surcharge: Rs. 37.5
 Final Bill: Rs.800
+pseudocode
+START
+INPUT number of passengers
+INPUT travel distance
+INPUT travel class
+
+FOR each passenger
+    INPUT passenger age
+    CALCULATE basic fare
+    APPLY age-based concession
+    ADD reservation fee
+
+    IF ticket is cancelled
+        APPLY cancellation penalty
+    END IF
+
+    CALCULATE final fare
+END FOR
+
+DISPLAY passenger-wise fares
+DISPLAY total railway fare
+STOP
 
 ```mermaid
 flowchart TD
@@ -58,8 +80,17 @@ flowchart TD
     E-->F
     F-->G[Stop]
 ```
+Test Cases
+Test Case	Input	Expected Output
+1	Adult passenger	Normal fare
+2	Eligible senior passenger	Concession applied
+3	Different travel classes	Different fares
+4	Cancelled ticket	Cancellation penalty applied
+
 sample output:
 Enter units :150
 previous month Bill: Rs.400
 Current month Bill: Rs.300
 Bill Increase : Rs.100
+Conclusion
+The program calculates railway fares for multiple passengers using distance, travel class, age concessions, reservation fees, and cancellation charges.

@@ -39,6 +39,28 @@ else:
 5. Select the eligible plan with the lowest cost.
 6. Display the selected plan and cost, or print no eligible plan.
 7. Stop.
+8. pseudo code
+9. START
+INPUT mobile usage details
+INPUT budget and validity
+INPUT available mobile plans
+
+FOR each mobile plan
+    CALCULATE total plan cost
+    CHECK data and call usage
+    CALCULATE excess charges
+    CHECK budget and validity
+
+    IF plan satisfies all conditions
+        MARK plan as eligible
+    END IF
+END FOR
+
+SELECT the lowest-cost eligible plan
+
+DISPLAY eligible plans
+DISPLAY most economical plan
+STOP
 Example and output
 Input: 30 GB usage, 28 days, budget ₹350.
 - Plan A: ₹199 + 10 × ₹10 = ₹299.
@@ -74,6 +96,24 @@ Total cost: 299.0
     M --> O
     N --> O  
 ```
+Test Cases
+Test Case	Input	Expected Output
+1	Usage within plan	No excess charges
+2	Usage exceeds data limit	Extra charges applied
+3	Cost within budget	Plan eligible
+4	Cost exceeds budget	Plan not eligible
+
+Conclusion
+est Cases
+Test Case	Input	Expected Output
+1	Usage within plan	No excess charges
+2	Usage exceeds data limit	Extra charges applied
+3	Cost within budget	Plan eligible
+4	Cost exceeds budget	Plan not eligible
+
+Conclusion
+The program compares multiple mobile plans based on usage, validity, and budget. It calculates extra charges and identifies the most economical eligible plan.
+
 sample output
 enter montly usage: 10GB
 enter budget : rs.500

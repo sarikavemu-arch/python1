@@ -42,6 +42,28 @@ Enter incentive: 0
 Gross salary: 32000.0
 Deduction: 2200.0
 Net salary: 29800.0  
+pseudocode
+START
+INPUT employee name and basic salary
+INPUT allowances, overtime and incentives
+
+CALCULATE gross salary
+
+CALCULATE progressive deductions
+
+CALCULATE net salary
+
+IF salary is valid
+    GENERATE salary statement
+ELSE
+    DISPLAY invalid salary
+END IF
+
+DISPLAY gross salary
+DISPLAY total deductions
+DISPLAY net salary
+
+STOP
 
 ```mermaid
 flowchart TD
@@ -61,6 +83,17 @@ flowchart TD
     D --> M([End])
     L --> M
 ```
+Test Cases
+Test Case	Input / Condition	Expected Output
+TC1	Basic salary with allowances	Gross salary calculated ✓
+TC2	Employee has overtime	Overtime added ✓
+TC3	Employee receives incentives	Incentives added ✓
+TC4	Progressive deduction applies	Deduction calculated ✓
+TC5	Negative basic salary	Invalid input ✗
+TC6	Valid salary details	Salary statement generated ✓
+
+Conclusion
+The Employee Payroll and Deduction Analysis system calculates gross salary using basic pay, allowances, overtime, and incentives. It applies progressive deductions and generates a salary statement. This system reduces manual errors and makes payroll processing easier.
 
 Sample output
 enter basic salary : 25000

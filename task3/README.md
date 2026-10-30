@@ -48,6 +48,8 @@ output
 Concession: 600.0
 Final bill: 5400.0
 Patient category: High payment 
+pseudocode
+
 
 ```mermaid
 flowchart TD

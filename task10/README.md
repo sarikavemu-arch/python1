@@ -62,6 +62,34 @@ Total income: 30000.0
 Total expenses: 16000.0
 Event profit: 14000.0
 Event budget successful
+pseudocode
+START
+INPUT venue cost
+INPUT equipment cost
+INPUT catering cost
+INPUT transport cost
+INPUT certificate cost
+INPUT sponsorship amount
+INPUT participant contribution
+
+CALCULATE total event expenses
+
+CALCULATE sponsorship shortfall
+
+CALCULATE amount required from participants
+
+CALCULATE minimum registration count
+
+IF sponsorship >= total event expenses
+    DISPLAY "Sponsorship is sufficient"
+ELSE
+    DISPLAY "Additional funds required"
+END IF
+
+DISPLAY total expenses
+DISPLAY participant contribution
+DISPLAY minimum registration count
+STOP
 ```mermaid
 flowchart TD
     A([Start]) --> B[/Enter ticket buyers and ticket price/]
@@ -83,7 +111,16 @@ flowchart TD
     O --> P
     F --> Q([End])
     P --> Q
-```            
+```
+   Test Case	Input	Expected Output
+1	Sponsorship covers expenses	No shortfall
+2	Sponsorship is insufficient	Shortfall calculated
+3	More registrations	Participant contribution increases
+4	Expenses increase	Break-even count increases
+
+Conclusion
+The program calculates campus event expenses, sponsorship requirements, and participant contributions. It identifies the minimum number of registrations required to break even.  
+
 sample output
 venue cost: rs.10000
 catering cost : rs.150000

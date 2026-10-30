@@ -69,6 +69,29 @@ Enter passenger age: 30
 Enter passenger age: 65
 Total reservation fare: 240.0
 Ticket confirmed
+pseudocode
+START
+INPUT number of passengers
+INPUT travel distance
+INPUT travel class
+
+FOR each passenger
+    INPUT passenger age
+    CALCULATE basic fare
+    APPLY age-based concession
+    ADD reservation fee
+
+    IF ticket is cancelled
+        APPLY cancellation penalty
+    END IF
+
+    CALCULATE final fare
+END FOR
+
+DISPLAY passenger-wise fares
+DISPLAY total railway fare
+STOP
+
  ```mermaid
 flowchart TD
     A([Start]) --> B[/Enter passengers distance class and cancellation choice/]
@@ -99,6 +122,15 @@ flowchart TD
     U --> V
     D --> V
 ```
+Test Cases
+Test Case	Input	Expected Output
+1	Adult passenger	Normal fare
+2	Eligible senior passenger	Concession applied
+3	Different travel classes	Different fares
+4	Cancelled ticket	Cancellation penalty applied
+
+Conclusion
+The program calculates railway fares for multiple passengers using distance, travel class, age concessions, reservation fees, and cancellation charges.
             
             
 

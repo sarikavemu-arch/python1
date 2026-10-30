@@ -1,5 +1,4 @@
 
-
 usage = float(input("Enter data usage in GB: "))
 days = int(input("Enter required validity in days: "))
 budget = float(input("Enter your budget: "))
@@ -114,11 +113,4 @@ Test Case	Input	Expected Output
 Conclusion
 The program compares multiple mobile plans based on usage, validity, and budget. It calculates extra charges and identifies the most economical eligible plan.
 
-sample output
-enter montly usage: 10GB
-enter budget : rs.500
-plan A cost: rs.399
-plan B cost : rs.499
-plan C cost: rs.599
-most economical plan : plan A 
-total cost : rs.399
+

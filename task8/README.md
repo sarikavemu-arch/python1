@@ -48,6 +48,34 @@ Total production cost: 8500.0
 Total revenue: 10000.0
 Profit: 1500.0
 Profit target achieved
+pseudocode
+START
+INPUT quantity of products
+INPUT material cost
+INPUT labour charges
+INPUT wastage percentage
+INPUT machine cost
+INPUT selling price
+INPUT profit target
+
+CALCULATE total material cost
+CALCULATE wastage cost
+CALCULATE total labour cost
+CALCULATE total machine cost
+
+CALCULATE total production cost
+CALCULATE total selling revenue
+CALCULATE profit
+
+IF profit >= profit target
+    DISPLAY "Profit target achieved"
+ELSE
+    DISPLAY "Profit target not achieved"
+END IF
+
+DISPLAY total cost and profit
+STOP
+
 ```mermaid            
  flowchart TD
     A([Start]) --> B[/Enter production costs/]
@@ -65,6 +93,16 @@ Profit target achieved
     E --> M([End])
     L --> M       
 ```
+Test Cases
+Test Case	Input	Expected Output
+1	Revenue greater than cost	Profit
+2	Revenue less than cost	Loss
+3	Profit equals target	Target achieved
+4	High wastage	Production cost increases
+
+Conclusion
+The program calculates manufacturing expenses, wastage, and selling revenue. It determines profit or loss and checks whether the specified profit target is achieved.
+
 sample output
 material cost: rs.5000
 ladour : rs.2000

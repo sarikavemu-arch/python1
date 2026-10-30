@@ -49,7 +49,29 @@ Concession: 600.0
 Final bill: 5400.0
 Patient category: High payment 
 pseudocode
+START
+INPUT patient name and patient type
 
+INPUT consultation charges
+INPUT diagnostic charges
+INPUT treatment charges
+
+CALCULATE total bill
+
+IF patient is eligible for concession
+    APPLY concession
+END IF
+
+VALIDATE billing amount
+
+IF payment >= required amount
+    CLASSIFY as Fully Paid
+ELSE
+    CLASSIFY as Pending Payment
+END IF
+
+DISPLAY final bill and patient classification
+STOP
 
 ```mermaid
 flowchart TD
@@ -73,6 +95,18 @@ flowchart TD
     D --> P([End])
     O --> P
 ```
+Test Cases
+Test Case	Input / Condition	Expected Output
+TC1	Normal billing	Total bill calculated ✓
+TC2	Eligible for concession	Discount applied ✓
+TC3	Not eligible for concession	Full amount charged ✓
+TC4	Invalid negative charges	Invalid input ✗
+TC5	Full payment completed	Fully Paid ✓
+TC6	Partial payment made	Pending Payment ✓
+
+Conclusion
+The Hospital Billing and Patient Classification system calculates patient bills by combining consultation, diiagnostic, and treatment charges. It applies eligible concessions, validates payments, and classifies patients according to payment status. This system improves billing accuracy and efficiency.
+
 Sample output
 consulation charges :500
 diagnosis charges :1000

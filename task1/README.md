@@ -22,6 +22,28 @@ Algorithm
 5. Check whether attendance is at least 75% and annual family income is at most ₹2,00,000.
 6. If all conditions are satisfied, display “Eligible”; otherwise, display “Not Eligible”.
 7. Stop.
+8. pseudocode
+9.  START
+INPUT mobile usage details
+INPUT budget and validity
+INPUT available mobile plans
+
+FOR each mobile plan
+    CALCULATE total plan cost
+    CHECK data and call usage
+    CALCULATE excess charges
+    CHECK budget and validity
+
+    IF plan satisfies all conditions
+        MARK plan as eligible
+    END IF
+END FOR
+
+SELECT the lowest-cost eligible plan
+
+DISPLAY eligible plans
+DISPLAY most economical plan
+STOP
    ```mermaid
    flowchart TD
     A([START]) --> B[/Input marks, subject marks, attendance, income/]
@@ -51,3 +73,12 @@ Enter annual family income: 150000
 Output
 Scholarship Status: Eligible
 
+Test Cases
+Test Case	Input	Expected Output
+1	Usage within plan	No excess charges
+2	Usage exceeds data limit	Extra charges applied
+3	Cost within budget	Plan eligible
+4	Cost exceeds budget	Plan not eligible
+
+Conclusion
+The program compares multiple mobile plans based on usage, validity, and budget. It calculates extra charges and identifies the most economical eligible plan.

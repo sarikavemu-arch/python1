@@ -83,7 +83,8 @@ flowchart TD
     D --> M([End])
     L --> M
 ```
-Test Cases
+Test Cases :
+
 Test Case	Input / Condition	Expected Output
 TC1	Basic salary with allowances	Gross salary calculated ✓
 TC2	Employee has overtime	Overtime added ✓
@@ -92,7 +93,8 @@ TC4	Progressive deduction applies	Deduction calculated ✓
 TC5	Negative basic salary	Invalid input ✗
 TC6	Valid salary details	Salary statement generated ✓
 
-Conclusion
+Conclusion :
+
 The Employee Payroll and Deduction Analysis system calculates gross salary using basic pay, allowances, overtime, and incentives. It applies progressive deductions and generates a salary statement. This system reduces manual errors and makes payroll processing easier.
 
 Sample output

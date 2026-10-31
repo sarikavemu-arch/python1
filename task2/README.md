@@ -80,7 +80,8 @@ flowchart TD
     E-->F
     F-->G[Stop]
 ```
-Test Cases
+Test Cases :
+
 Test Case	Input	Expected Output
 1	Adult passenger	Normal fare
 2	Eligible senior passenger	Concession applied
@@ -92,5 +93,6 @@ Enter units :150
 previous month Bill: Rs.400
 Current month Bill: Rs.300
 Bill Increase : Rs.100
-Conclusion
+Conclusion :
+
 The program calculates railway fares for multiple passengers using distance, travel class, age concessions, reservation fees, and cancellation charges.

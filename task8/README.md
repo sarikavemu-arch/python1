@@ -93,14 +93,16 @@ STOP
     E --> M([End])
     L --> M       
 ```
-Test Cases
+Test Cases :
+
 Test Case	Input	Expected Output
 1	Revenue greater than cost	Profit
 2	Revenue less than cost	Loss
 3	Profit equals target	Target achieved
 4	High wastage	Production cost increases
 
-Conclusion
+Conclusion :
+
 The program calculates manufacturing expenses, wastage, and selling revenue. It determines profit or loss and checks whether the specified profit target is achieved.
 
 sample output

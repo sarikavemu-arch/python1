@@ -90,6 +90,7 @@ DISPLAY total expenses
 DISPLAY participant contribution
 DISPLAY minimum registration count
 STOP
+
 ```mermaid
 flowchart TD
     A([Start]) --> B[/Enter ticket buyers and ticket price/]
@@ -112,19 +113,19 @@ flowchart TD
     F --> Q([End])
     P --> Q
 ```
+Test case :
+
    Test Case	Input	Expected Output
 1	Sponsorship covers expenses	No shortfall
 2	Sponsorship is insufficient	Shortfall calculated
 3	More registrations	Participant contribution increases
 4	Expenses increase	Break-even count increases
 
-Conclusion
+Conclusion :
+
 The program calculates campus event expenses, sponsorship requirements, and participant contributions. It identifies the minimum number of registrations required to break even.  
 
-sample output
-venue cost: rs.10000
-catering cost : rs.150000
-equipment cost :rs.50000
+
 total cost:rs.30000
 remaining amount :rs.20000
 contribution :rs.200

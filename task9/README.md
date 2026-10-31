@@ -120,21 +120,17 @@ flowchart TD
     D --> P([End])
     O --> P
 ```
-Test Cases
+Test Cases  :
+
 Test Case	Input	Expected Output
 1	Expenses below budget	Within budget
 2	Expenses above budget	Budget exceeded
 3	Different exchange rates	Converted amounts
 4	Multiple expense categories	Largest expense identified
 
-Conclusion
-The program converts travel expenses into local currency using exchange rates and conversion fees. It compares total expenses with the budget and identifies the largest expense category.
+Conclusion :
 
-sample output
-sample output
-material cost :rs.50000
-labour cost :rs.20000
-machine cost : rs.1000
+The program converts travel expenses into local currency using exchange rates and conversion fees. It compares total expenses with the budget and identifies the largest expense categore
 selling price :rs.12000
 
 total cost : rs.8000

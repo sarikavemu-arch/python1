@@ -95,14 +95,16 @@ Total cost: 299.0
     M --> O
     N --> O  
 ```
-Test Cases
+Test Cases :
+
 Test Case	Input	Expected Output
 1	Usage within plan	No excess charges
 2	Usage exceeds data limit	Extra charges applied
 3	Cost within budget	Plan eligible
 4	Cost exceeds budget	Plan not eligible
 
-Conclusion
+Conclusion :
+
 est Cases
 Test Case	Input	Expected Output
 1	Usage within plan	No excess charges

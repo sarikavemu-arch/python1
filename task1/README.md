@@ -73,12 +73,14 @@ Enter annual family income: 150000
 Output
 Scholarship Status: Eligible
 
-Test Cases
+Test Cases :
+
 Test Case	Input	Expected Output
 1	Usage within plan	No excess charges
 2	Usage exceeds data limit	Extra charges applied
 3	Cost within budget	Plan eligible
 4	Cost exceeds budget	Plan not eligible
 
-Conclusion
+Conclusion :
+
 The program compares multiple mobile plans based on usage, validity, and budget. It calculates extra charges and identifies the most economical eligible plan.

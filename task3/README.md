@@ -95,7 +95,8 @@ flowchart TD
     D --> P([End])
     O --> P
 ```
-Test Cases
+Test Cases :
+
 Test Case	Input / Condition	Expected Output
 TC1	Normal billing	Total bill calculated ✓
 TC2	Eligible for concession	Discount applied ✓
@@ -104,7 +105,8 @@ TC4	Invalid negative charges	Invalid input ✗
 TC5	Full payment completed	Fully Paid ✓
 TC6	Partial payment made	Pending Payment ✓
 
-Conclusion
+Conclusion :
+
 The Hospital Billing and Patient Classification system calculates patient bills by combining consultation, diiagnostic, and treatment charges. It applies eligible concessions, validates payments, and classifies patients according to payment status. This system improves billing accuracy and efficiency.
 
 Sample output

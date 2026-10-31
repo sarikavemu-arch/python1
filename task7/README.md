@@ -119,13 +119,16 @@ flowchart TD
     D --> T([End])
     S --> T
 ```
+test case :
+
 Test Case	Input	Expected Output
 1	Single product	Product bill generated
 2	Multiple products	Total bill calculated
 3	Purchase above discount limit	Discount applied
 4	Purchase below discount limit	No threshold discount
 
-Conclusion
+Conclusion :
+
 The program generates an itemized retail bill by calculating product costs, quantities, taxes, and discounts. It applies discount limits and displays the final amount.
 sample output
 product: bag
